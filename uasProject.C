@@ -89,6 +89,14 @@ void updateUser(int userIndex) {
     getchar();
 }
 
+float uangMasuk = 0;
+float bensinKeluar;
+
+void beliBensin(float rupiah){
+    uangMasuk= uangMasuk + rupiah;
+    bensinKeluar = rupiah/(float)15000;
+}
+
 int main() {
     int choice;
     int userIndex;
